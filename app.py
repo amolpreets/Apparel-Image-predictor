@@ -23,7 +23,7 @@ def allowed_file(filename):
         
 def init():
     global graph
-    graph =tf.compat.v1.get_default_graph()
+    graph =tf.get_default_graph()
 
 def read_image(filename):
     img =load_img(filename,grayscale =True,target_size =(28,28))
